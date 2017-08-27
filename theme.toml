@@ -1,0 +1,17 @@
+name = "slicky-snerrick"
+license = "Apache 2.0"
+licenselink = "https://github.com/derrickshowers/slicky-snerrick-hugo-theme/blob/master/LICENSE.md"
+description = "A Hugo blog theme... that is slick"
+homepage = "https://github.com/derrickshowers/slicky-snerrick-hugo-theme/"
+tags = ["blog", "bootstrap"]
+features = ["blog", "bootstrap"]
+min_version = 0.18
+
+[author]
+  name = "Derrick Showers"
+  homepage = "https://derrickshowers.com"
+
+# Original theme
+[original]
+  name = "Hugo Clean Blog"
+  repo = "https://github.com/humboldtux/startbootstrap-clean-blog"

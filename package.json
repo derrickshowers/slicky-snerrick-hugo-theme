@@ -1,0 +1,10 @@
+{
+  "name": "slicky-snerrick",
+  "description": "A Hugo blog theme... that is slick",
+  "scripts": {
+    "build": "sass sass/base.scss:./static/css/clean-blog.min.css --style compressed",
+    "dev": "sass  --watch sass/base.scss:./static/css/clean-blog.min.css"
+  },
+  "author": "Derrick Showers",
+  "license": "Apache 2.0"
+}
