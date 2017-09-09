@@ -2,8 +2,8 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    {{ if isset .Params "image" }}<header class="intro-header" style="background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('{{ .Site.BaseURL }}/{{ .Params.image }}')">
-      {{ else }}<header class="intro-header" style="background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('{{ .Site.BaseURL }}/img/post-bg.jpg')">
+    {{ if isset .Params "image" }}<header class="intro-header" style="background-image: {{if .Params.bgOverlayOpacity}}linear-gradient( rgba(0, 0, 0, {{ .Params.bgOverlayOpacity }}), rgba(0, 0, 0, {{ .Params.bgOverlayOpacity }}) ), {{end}}url('{{ .Site.BaseURL }}/{{ .Params.image }}')">
+      {{ else }}<header class="intro-header" style="background-image: {{if .Params.bgOverlayOpacity}}linear-gradient( rgba(0, 0, 0, {{ .Params.bgOverlayOpacity }}), rgba(0, 0, 0, {{ .Params.bgOverlayOpacity }}) ), {{end}}url('{{ .Site.BaseURL }}/img/post-bg.jpg')">
     {{ end }}
       <div class="container">
         <div class="row">
