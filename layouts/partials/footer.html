@@ -17,7 +17,7 @@
                     {{ end }}
                     {{ range .Site.Params.social }}
                     <li>
-                      <a href="{{ .url }}">
+                      <a {{ if eq .newTab true }}target="_blank"{{ end }} href="{{ .url }}">
                         <span class="fa-stack fa-lg">
                           <i class="fa fa-circle fa-stack-2x"></i>
                           <i class="fa fa-{{ .title }} fa-stack-1x fa-inverse"></i>
