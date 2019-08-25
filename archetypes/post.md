@@ -1,17 +1,15 @@
-+++
-tags = [
-    "go",
-    "golang",
-    "templates",
-    "themes",
-    "development",
-]
-categories = [
-    "Development",
-    "golang",
-]
-image = "/img/about-bg.jpg" #optional image - "/img/about-bg.jpg" is the default
-description = ""
-draft = true
-comments = true
-+++
+---
+title: {{ replace .Name "-" " " | title }}
+description: A description about this post.
+slug: new-slug
+date: {{ .Date }}
+tags:
+  - tag1
+  - tag2
+  - tag3
+image: img/post-bg.jpg
+bgOverlayOpacity: '0.50'
+comments: 'false'
+---
+
+Insert text here.
