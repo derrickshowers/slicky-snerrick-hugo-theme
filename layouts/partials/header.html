@@ -25,7 +25,7 @@
     <!-- Custom CSS -->
     {{ $baseURL := .Site.BaseURL }}
     {{ range .Site.Params.customCSS }}
-      <script src="{{ $baseURL }}/{{ . }}"></script>
+      <link href="{{ $baseURL }}/{{ . }}" rel="stylesheet">
     {{ end }}
 
     <!-- Custom Fonts -->
