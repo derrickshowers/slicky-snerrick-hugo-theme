@@ -2,7 +2,7 @@
   "name": "slicky-snerrick",
   "description": "A Hugo blog theme... that is slick",
   "scripts": {
-    "build": "sass sass/base.scss:./static/css/slicky-snerrick.min.css --style compressed --sourcemap=none",
+    "build": "sass sass/base.scss:./static/css/slicky-snerrick.min.css --style compressed",
     "dev": "sass --watch sass/base.scss:./static/css/slicky-snerrick.min.css"
   },
   "author": "Derrick Showers",
