@@ -7,6 +7,5 @@
 {{else}}
   Posted on {{ dateFormat .Site.Params.DateForm .Date }}
 {{ end }}
-{{ partial "categories.html" .}}
 <br />
-{{ partial "tags.html" .}}
+{{ partial "taxonomy.html" .}}
