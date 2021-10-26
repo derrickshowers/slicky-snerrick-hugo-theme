@@ -36,6 +36,7 @@
     <!-- Social Tags -->
     <meta property="og:title" content="{{ .Title }}" />
     <meta property="og:url" content="{{ .Site.BaseURL }}/{{ .Params.slug }}" />
+    <meta property="og:type" content="website">
     {{if .Params.image }}
       <meta property="og:image" content="{{ .Site.BaseURL }}/{{ .Params.image }}" />
     {{else}}
